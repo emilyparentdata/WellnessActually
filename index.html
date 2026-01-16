@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness, Actually | with Emily Oster & Perry Wilson, MD</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #2a7a7a;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .podcast-cover {
+            max-width: 300px;
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .tagline {
+            color: white;
+            font-size: 1.3rem;
+            font-style: italic;
+            margin-top: 20px;
+        }
+
+        /* Description */
+        .description {
+            background-color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .description p {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        /* Latest Episode Player */
+        .latest-episode {
+            background-color: #2a7a7a;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .latest-episode h2 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .player-placeholder {
+            background-color: #1e5f5f;
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 700px;
+            margin: 0 auto;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .player-placeholder p {
+            font-size: 0.95rem;
+        }
+
+        /* Subscribe Links */
+        .subscribe {
+            background-color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .subscribe h2 {
+            color: #2a7a7a;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+        }
+
+        .platform-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .platform-link {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #2a7a7a;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 500;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .platform-link:hover {
+            background-color: #1e5f5f;
+            transform: translateY(-2px);
+        }
+
+        /* Hosts Section */
+        .hosts {
+            background-color: #f5f5f5;
+            padding: 60px 20px;
+        }
+
+        .hosts h2 {
+            text-align: center;
+            color: #2a7a7a;
+            margin-bottom: 40px;
+            font-size: 1.8rem;
+        }
+
+        .hosts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .host-card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .host-card h3 {
+            color: #2a7a7a;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .host-card p {
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #2a7a7a;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .contact p {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 20px;
+        }
+
+        .contact-link {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: white;
+            color: #2a7a7a;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .contact-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1e5f5f;
+            padding: 20px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #1e5f5f;
+            padding: 15px 20px;
+        }
+
+        nav .container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .nav-brand {
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .nav-links a {
+            margin-left: 25px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .podcast-cover {
+                max-width: 220px;
+            }
+
+            .tagline {
+                font-size: 1.1rem;
+            }
+
+            .hosts-grid {
+                grid-template-columns: 1fr;
+            }
+
+            h2 {
+                font-size: 1.5rem !important;
+            }
+
+            nav .container {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .nav-links a {
+                margin-left: 15px;
+            }
+
+            .nav-links a:first-child {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="nav-brand">Wellness, Actually</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="episodes.html">Episodes</a>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <img src="Background/podcast cover teal bg (2) (1).png" alt="Wellness, Actually Podcast Cover" class="podcast-cover">
+            <p class="tagline">Smart takes. Low stakes.</p>
+        </div>
+    </header>
+
+    <section class="description">
+        <div class="container">
+            <p>A weekly show that unpacks buzzy headlines, overhyped wellness trends, and confusing health advice with clarity, curiosity, and humor. Grounded in data but never dry, Wellness, Actually is a trusted guide for people who want to stay informed without getting overwhelmed.</p>
+        </div>
+    </section>
+
+    <section class="latest-episode">
+        <div class="container">
+            <h2>Latest Episode</h2>
+            <div class="player-placeholder">
+                <!-- Embed your podcast player here (e.g., Spotify, Apple Podcasts, or iHeartRadio embed code) -->
+                <p>Podcast player embed goes here</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscribe">
+        <div class="container">
+            <h2>Listen & Subscribe</h2>
+            <div class="platform-links">
+                <a href="#" class="platform-link">Apple Podcasts</a>
+                <a href="#" class="platform-link">Spotify</a>
+                <a href="#" class="platform-link">iHeartRadio</a>
+                <a href="#" class="platform-link">Amazon Music</a>
+                <a href="#" class="platform-link">YouTube</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="hosts">
+        <div class="container">
+            <h2>Meet the Hosts</h2>
+            <div class="hosts-grid">
+                <div class="host-card">
+                    <h3>Emily Oster</h3>
+                    <p>Emily Oster is on a mission to empower parents by providing the data and tools they need to make confident decisions. She is a professor of economics at Brown University and the founder and CEO of ParentData, a data-driven guide to pregnancy, parenting, and beyond. ParentData's weekly newsletter has hundreds of thousands of subscribers, along with a strong social media community. Emily is also a New York Times best-selling author, whose books include <em>Expecting Better</em>, <em>Cribsheet</em>, <em>The Family Firm</em>, and <em>The Unexpected</em>.</p>
+                </div>
+                <div class="host-card">
+                    <h3>Dr. F. Perry Wilson</h3>
+                    <p>Dr. F. Perry Wilson is an Associate Professor of Medicine (Internal Medicine/Nephrology) and Public Health (Chronic Disease Epidemiology) at Yale University, where he runs Yale's Clinical and Translational Research Accelerator, conducting research in digital health interventions. An expert in interpreting medical studies, he created the wildly popular online course "Understanding Medical Research: Your Facebook Friend is Wrong," which has been taken by more than 100,000 people around the world. Dr. Wilson appears frequently on CNN and radio stations around the country. His latest book, <em>How Medicine Works and When It Doesn't: Learning Who to Trust to Get and Stay Healthy</em>, is available now.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>Have a question or want to connect?</p>
+            <a href="mailto:Nadia@parentdata.org" class="contact-link">Contact Us</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Wellness, Actually. All rights reserved.</p>
+    </footer>
+</body>
+</html>
