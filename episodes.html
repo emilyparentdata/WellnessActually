@@ -150,6 +150,40 @@
             font-size: 0.9rem;
         }
 
+        .episode-links {
+            display: flex;
+            gap: 12px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .episode-page-link {
+            display: inline-block;
+            padding: 10px 22px;
+            background-color: #2a7a7a;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .episode-page-link:hover {
+            background-color: #1e5f5f;
+            transform: translateY(-2px);
+        }
+
+        .episode-page-link.secondary {
+            background-color: white;
+            color: #2a7a7a;
+            border: 2px solid #2a7a7a;
+        }
+
+        .episode-page-link.secondary:hover {
+            background-color: #f0f9f9;
+        }
+
         /* Footer */
         footer {
             background-color: #1e5f5f;
@@ -212,6 +246,9 @@
             <div class="episode-player">
                 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1lKeGxjjajocud2MZ5MTAd?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
+            <div class="episode-links">
+                <a href="episodes/episode-2-peptides.html" class="episode-page-link secondary">View Transcript</a>
+            </div>
         </article>
 
         <article class="episode-card">
@@ -221,8 +258,8 @@
             </div>
             <h2>What's the Deal with Declining Sperm Counts?</h2>
             <p class="episode-description">In the inaugural episode, Emily Oster and Perry Wilson, MD tackle the buzzy question of whether sperm counts are really declining. Plus: vitamin K injections at birth, ketogenic diet for schizophrenia treatment, and more.</p>
-            <div class="episode-player">
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1WX2P0IcSl3XfSJvaMNX92?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <div class="episode-links">
+                <a href="episodes/episode-1-sperm-counts.html" class="episode-page-link">Listen &amp; View Transcript</a>
             </div>
         </article>
 
@@ -233,14 +270,14 @@
             </div>
             <h2>Official Trailer: Wellness, Actually</h2>
             <p class="episode-description">Meet your hosts, Emily Oster and Perry Wilson, MD, as they introduce Wellness, Actually—a podcast on a mission to separate fact from fiction, causality from correlation, when it comes to the health and wellness topics you care about most.</p>
-            <div class="episode-player">
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3wf5f6cycw1BoeOP6NiJoH?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <div class="episode-links">
+                <a href="episodes/trailer.html" class="episode-page-link">Listen &amp; View Transcript</a>
             </div>
         </article>
     </main>
 
     <footer>
-        <p>&copy; 2025 Wellness, Actually. All rights reserved.</p>
+        <p>&copy; 2026 Wellness, Actually. All rights reserved.</p>
     </footer>
 </body>
 </html>
