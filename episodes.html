@@ -140,6 +140,24 @@
             margin-bottom: 6px;
         }
 
+        .view-episode-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 22px;
+            background-color: #2a7a7a;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .view-episode-link:hover {
+            background-color: #1e5f5f;
+            transform: translateY(-2px);
+        }
+
         .episode-player {
             background-color: #1e5f5f;
             border-radius: 8px;
@@ -204,14 +222,25 @@
     <main class="episodes">
         <article class="episode-card">
             <div class="episode-header">
+                <span class="episode-number">Episode 3</span>
+                <span class="episode-date">February 26, 2026</span>
+            </div>
+            <h2>What's the Deal with Cold Plunges and Saunas?</h2>
+            <p class="episode-description">Emily Oster and Perry Wilson, MD explore the science behind cold plunges and saunas—two temperature extremes dominating the wellness world. Are they worth the discomfort? Plus: alarming measles outbreak numbers, FDA leadership changes, and a 5,000-year-old antibiotic-resistant bacteria found in a Romanian ice cave.</p>
+            <div class="episode-player">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/5igTryEwHMmAJfODAFKp3W?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>
+            <a href="episodes/episode-3-cold-plunges-saunas.html" class="view-episode-link">View Episode →</a>
+        </article>
+
+        <article class="episode-card">
+            <div class="episode-header">
                 <span class="episode-number">Episode 2</span>
                 <span class="episode-date">February 19, 2026</span>
             </div>
             <h2>What's the Deal with Peptides?</h2>
             <p class="episode-description">Emily Oster and Perry Wilson, MD explore peptides as a purported health solution, examining claims about metabolism boosting, skin plumping, injury healing, and life extension—plus the potential risks of injecting peptides from uncertain sources. Also: mRNA flu vaccines, hormone replacement therapy, and Olympic Village condom availability.</p>
-            <div class="episode-player">
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1lKeGxjjajocud2MZ5MTAd?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
+            <a href="episodes/episode-2-peptides.html" class="view-episode-link">View Episode →</a>
         </article>
 
         <article class="episode-card">
@@ -221,9 +250,7 @@
             </div>
             <h2>What's the Deal with Declining Sperm Counts?</h2>
             <p class="episode-description">In the inaugural episode, Emily Oster and Perry Wilson, MD tackle the buzzy question of whether sperm counts are really declining. Plus: vitamin K injections at birth, ketogenic diet for schizophrenia treatment, and more.</p>
-            <div class="episode-player">
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/1WX2P0IcSl3XfSJvaMNX92?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
+            <a href="episodes/episode-1-sperm-counts.html" class="view-episode-link">View Episode →</a>
         </article>
 
         <article class="episode-card">
@@ -233,9 +260,7 @@
             </div>
             <h2>Official Trailer: Wellness, Actually</h2>
             <p class="episode-description">Meet your hosts, Emily Oster and Perry Wilson, MD, as they introduce Wellness, Actually—a podcast on a mission to separate fact from fiction, causality from correlation, when it comes to the health and wellness topics you care about most.</p>
-            <div class="episode-player">
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3wf5f6cycw1BoeOP6NiJoH?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            </div>
+            <a href="episodes/trailer.html" class="view-episode-link">View Episode →</a>
         </article>
     </main>
 
