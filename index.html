@@ -27,7 +27,7 @@
         /* Header */
         header {
             background-color: #2a7a7a;
-            padding: 40px 0;
+            padding: 40px 0 30px;
             text-align: center;
         }
 
@@ -45,6 +45,13 @@
             margin-top: 20px;
         }
 
+        .episode-schedule {
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 0.95rem;
+            margin-top: 8px;
+            letter-spacing: 0.03em;
+        }
+
         /* Description */
         .description {
             background-color: white;
@@ -54,9 +61,13 @@
 
         .description p {
             max-width: 700px;
-            margin: 0 auto;
+            margin: 0 auto 15px;
             font-size: 1.1rem;
             color: #555;
+        }
+
+        .description p:last-child {
+            margin-bottom: 0;
         }
 
         /* Latest Episode Player */
@@ -166,7 +177,7 @@
         /* Submit a Question */
         .submit-question {
             background-color: white;
-            padding: 50px 20px;
+            padding: 30px 20px 20px;
             text-align: center;
         }
 
@@ -317,6 +328,7 @@
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="episodes.html">Episodes</a>
+                <a href="#submit-question">Submit a Recorded Question</a>
             </div>
         </div>
     </nav>
@@ -324,13 +336,23 @@
     <header>
         <div class="container">
             <img src="Background/podcast cover teal bg (2) (1).png" alt="Wellness, Actually Podcast Cover" class="podcast-cover">
-            <p class="tagline">Smart takes. Low stakes.</p>
+            <p class="tagline">Health Advice for Real Life</p>
+            <p class="episode-schedule">New episodes every Thursday</p>
         </div>
     </header>
 
+    <section class="submit-question" id="submit-question">
+        <div class="container">
+            <h2>Submit a Recorded Question</h2>
+            <p>Got a wellness question you want us to tackle on the show? We'd love to hear from you!</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSes0isXDXG3FD2Oc5Sg96BTOAZDT_yFv5dwj_UKJTHym2JzsQ/viewform" target="_blank" rel="noopener noreferrer" class="submit-question-link">Submit Your Recorded Question</a>
+        </div>
+    </section>
+
     <section class="description">
         <div class="container">
-            <p>A weekly show that unpacks buzzy headlines, overhyped wellness trends, and confusing health advice with clarity, curiosity, and humor. Grounded in data but never dry, Wellness, Actually is a trusted guide for people who want to stay informed without getting overwhelmed.</p>
+            <p>There's a staggering amount of health and wellness news and information bombarding us everywhere we look – and who's got time to parse it out, to verify it, and then to actually do the work of improving our health? We do! And unlike the influencers, we actually know how to read a medical paper.</p>
+            <p>This weekly podcast separates fact from fiction, causality from correlation, so that you can stay informed without being overwhelmed. Every episode, we cover the health news of the week, take listener questions, and do a deep dive into a buzzy and misunderstood wellness topic so that you can actually make the best decisions for your own health.</p>
         </div>
     </section>
 
@@ -371,11 +393,11 @@
         </div>
     </section>
 
-    <section class="submit-question">
+    <section class="submit-question" id="submit-question-bottom">
         <div class="container">
-            <h2>Submit a Question</h2>
+            <h2>Submit a Recorded Question</h2>
             <p>Got a wellness question you want us to tackle on the show? We'd love to hear from you!</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSes0isXDXG3FD2Oc5Sg96BTOAZDT_yFv5dwj_UKJTHym2JzsQ/viewform" target="_blank" rel="noopener noreferrer" class="submit-question-link">Submit Your Question</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSes0isXDXG3FD2Oc5Sg96BTOAZDT_yFv5dwj_UKJTHym2JzsQ/viewform" target="_blank" rel="noopener noreferrer" class="submit-question-link">Submit Your Recorded Question</a>
         </div>
     </section>
 
@@ -388,7 +410,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 Wellness, Actually. All rights reserved.</p>
+        <p>&copy; 2026 Wellness, Actually. All rights reserved.</p>
     </footer>
 </body>
 </html>
