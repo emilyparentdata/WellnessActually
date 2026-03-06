@@ -1,10 +1,6 @@
 name: Update Episodes
 
 on:
-  schedule:
-    # 10am UTC = 5am ET (winter) / 6am ET (summer) every Thursday
-    # Gives ~1-2 hours buffer after episodes drop at 4am ET
-    - cron: '0 10 * * 4'
   workflow_dispatch: # Allow manual runs from the Actions tab
 
 jobs:
