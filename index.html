@@ -246,80 +246,6 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
 
-        /* Announcement Popup */
-        .popup-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 1000;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .popup-overlay.active {
-            display: flex;
-        }
-
-        .popup-box {
-            background-color: white;
-            border-radius: 12px;
-            max-width: 480px;
-            width: 100%;
-            padding: 35px 30px 30px;
-            text-align: center;
-            position: relative;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-        }
-
-        .popup-close {
-            position: absolute;
-            top: 12px;
-            right: 16px;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            line-height: 1;
-            color: #999;
-            cursor: pointer;
-        }
-
-        .popup-close:hover {
-            color: #333;
-        }
-
-        .popup-box h3 {
-            color: #2a7a7a;
-            margin-bottom: 15px;
-            font-size: 1.4rem;
-        }
-
-        .popup-box p {
-            color: #555;
-            margin-bottom: 20px;
-            font-size: 1rem;
-        }
-
-        .popup-link {
-            display: inline-block;
-            padding: 12px 28px;
-            background-color: #2a7a7a;
-            color: white;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: 600;
-            transition: background-color 0.3s, transform 0.2s;
-        }
-
-        .popup-link:hover {
-            background-color: #1e5f5f;
-            transform: translateY(-2px);
-        }
-
         /* Footer */
         footer {
             background-color: #1e5f5f;
@@ -396,15 +322,6 @@
     </style>
 </head>
 <body>
-    <div class="popup-overlay" id="grab-bag-popup">
-        <div class="popup-box">
-            <button class="popup-close" id="grab-bag-popup-close" aria-label="Close">&times;</button>
-            <h3>Wellness, Actually Grab Bag</h3>
-            <p>Next week we'll be doing our first Wellness, Actually Grab Bag episode, for all the ridiculous wellness fads that don't merit a whole deep dive but we still love them. We'd love your help - submit a question or comment about a fad, and we'd also love a social media post for us to watch. The deadline is end of day on Saturday, September 19.</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSd3jcEVf-E8_1dxYen6rjAurkeXXZqZdxL7kcsB87cf8nzg/viewform" target="_blank" rel="noopener noreferrer" class="popup-link">Submit Your Fad</a>
-        </div>
-    </div>
-
     <nav>
         <div class="container">
             <a href="index.html" class="nav-brand">Wellness, Actually</a>
@@ -443,7 +360,7 @@
         <div class="container">
             <h2>Latest Episode</h2>
             <div class="player-placeholder">
-                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/4kTmkRL5Fcm50eGBy0CMTF?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/7bLMNkY1JldKNajIlZOAXP?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
         </div>
     </section>
@@ -495,26 +412,5 @@
     <footer>
         <p>&copy; 2026 Wellness, Actually. All rights reserved.</p>
     </footer>
-
-    <script>
-        (function () {
-            var overlay = document.getElementById('grab-bag-popup');
-            var closeBtn = document.getElementById('grab-bag-popup-close');
-
-            function closePopup() {
-                overlay.classList.remove('active');
-            }
-
-            overlay.classList.add('active');
-
-            closeBtn.addEventListener('click', closePopup);
-            overlay.addEventListener('click', function (e) {
-                if (e.target === overlay) closePopup();
-            });
-            document.addEventListener('keydown', function (e) {
-                if (e.key === 'Escape') closePopup();
-            });
-        })();
-    </script>
 </body>
 </html>
